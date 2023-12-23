@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "logging.h": "c",
+        "sdl.h": "c",
+        "hash_table.h": "c",
+        "input.h": "c",
+        "stb.h": "c",
+        "list.h": "c",
+        "cstdlib": "c",
+        "array": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "vector": "c"
+    },
+    "cmake.configureOnOpen": true
+}

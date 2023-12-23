@@ -12,11 +12,12 @@ typedef struct ht_node
 typedef struct kd_hash_table 
 {
     ht_node** table;
-    int size;
+    size_t size;
+    size_t capacity;
 } hash_table;
 
-u64             ht_hash(const char* str, int max_size);
-hash_table      ht_create_table(int size);
+size_t          ht_hash(const char* str, size_t max_size);
+hash_table      ht_create_table(size_t size);
 void            ht_insert(hash_table* ht, const char* key, void* value);
 void*           ht_get(hash_table* ht, const char* key);
 void            ht_remove(hash_table* ht, const char* key);
